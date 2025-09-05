@@ -1,26 +1,343 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Política de Privacidad</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      line-height: 1.6;
-    }
-    h1 {
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Heriberto C.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            min-height: 100vh;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="white" opacity="0.1"><polygon points="0,0 1000,0 1000,100 0,80"/></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        main {
+            padding: 3rem 2rem;
+        }
+        
+        .last-updated {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 0 8px 8px 0;
+            font-weight: 500;
+            color: #1565c0;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #667eea;
+            position: relative;
+        }
+        
+        h3 {
+            color: #34495e;
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem 0;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        
+        ul {
+            margin: 1rem 0 1rem 2rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+            padding-left: 0.5rem;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid #e1e8ed;
+        }
+        
+        .contact-info h3 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-left: 4px solid #f39c12;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        
+        .footer-links {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #34495e;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 2rem 1rem;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            main {
+                padding: 2rem 1rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .contact-info {
+                padding: 1.5rem;
+            }
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        strong {
+            color: #2c3e50;
+        }
+    </style>
 </head>
 <body>
-  <h1>Política de Privacidad</h1>
-  <p>Esta aplicación utiliza la información que el usuario comparte a través de Messenger únicamente para interactuar con el bot y brindar respuestas automatizadas.</p>
-  <p>No almacenamos de manera permanente datos personales sensibles, ni compartimos información con terceros.</p>
-  <p>El uso de esta aplicación está destinado únicamente a mejorar la comunicación con el usuario y brindar un mejor servicio.</p>
-  <p>Al interactuar con nuestro bot, el usuario acepta que sus mensajes sean procesados automáticamente para generar una respuesta.</p>
+    <div class="container">
+        <header>
+            <h1>Política de Privacidad</h1>
+            <p>Aplicación de Respuesta Automática para Páginas de Facebook</p>
+        </header>
+        
+        <main>
+            <div class="last-updated">
+                <strong>Última actualización:</strong> 5 de septiembre de 2025
+            </div>
+            
+            <div class="section">
+                <p>En <strong>Heriberto C.</strong> valoramos tu privacidad y nos comprometemos a proteger la información personal que compartes con nosotros. Esta Política de Privacidad describe cómo recopilamos, usamos, almacenamos y protegemos tu información cuando utilizas nuestra aplicación de Facebook para responder mensajes de páginas usando inteligencia artificial.</p>
+            </div>
+            
+            <h2>1. Información que Recopilamos</h2>
+            
+            <h3>1.1 Información de Facebook</h3>
+            <p>Nuestra aplicación accede y procesa la siguiente información de Facebook:</p>
+            <ul>
+                <li><strong>Mensajes de páginas:</strong> Contenido de los mensajes recibidos en las páginas de Facebook que administras</li>
+                <li><strong>Información básica de la página:</strong> Nombre, ID y configuración básica de tus páginas</li>
+                <li><strong>Información del perfil:</strong> Nombre, email y ID de usuario necesarios para la autenticación</li>
+                <li><strong>Permisos de gestión:</strong> Confirmación de que tienes autorización para administrar las páginas</li>
+            </ul>
+            
+            <h3>1.2 Información de Uso</h3>
+            <p>También recopilamos:</p>
+            <ul>
+                <li>Registros de interacciones con la aplicación</li>
+                <li>Estadísticas de uso y rendimiento</li>
+                <li>Información técnica como direcciones IP y tipos de navegador</li>
+                <li>Configuraciones y preferencias personalizadas</li>
+            </ul>
+            
+            <h2>2. Cómo Utilizamos tu Información</h2>
+            
+            <div class="section">
+                <p>Utilizamos la información recopilada para:</p>
+                <ul>
+                    <li><strong>Proporcionar el servicio:</strong> Generar respuestas automáticas inteligentes a los mensajes de tus páginas</li>
+                    <li><strong>Mejorar la IA:</strong> Entrenar y optimizar nuestros algoritmos de inteligencia artificial</li>
+                    <li><strong>Personalización:</strong> Adaptar las respuestas al tono y estilo de tu marca</li>
+                    <li><strong>Soporte técnico:</strong> Diagnosticar problemas y brindar asistencia</li>
+                    <li><strong>Análisis:</strong> Generar estadísticas de rendimiento y uso</li>
+                    <li><strong>Seguridad:</strong> Detectar y prevenir uso indebido o fraudulento</li>
+                </ul>
+            </div>
+            
+            <h2>3. Compartir Información</h2>
+            
+            <div class="highlight">
+                <strong>Compromiso de Privacidad:</strong> No vendemos, alquilamos ni compartimos tu información personal con terceros para fines comerciales sin tu consentimiento explícito.
+            </div>
+            
+            <p>Podemos compartir información limitada en las siguientes circunstancias:</p>
+            <ul>
+                <li><strong>Proveedores de servicios:</strong> Con empresas que nos ayudan a operar la aplicación (hosting, análisis, soporte)</li>
+                <li><strong>Cumplimiento legal:</strong> Cuando sea requerido por ley o para proteger nuestros derechos legales</li>
+                <li><strong>Transferencias comerciales:</strong> En caso de fusión, adquisición o venta de activos</li>
+                <li><strong>Consentimiento:</strong> Cuando hayas dado tu autorización específica</li>
+            </ul>
+            
+            <h2>4. Seguridad de los Datos</h2>
+            
+            <div class="section">
+                <p>Implementamos medidas de seguridad técnicas y organizativas para proteger tu información:</p>
+                <ul>
+                    <li>Cifrado de datos en tránsito y en reposo</li>
+                    <li>Acceso restringido basado en roles</li>
+                    <li>Monitoreo continuo de seguridad</li>
+                    <li>Auditorías regulares de seguridad</li>
+                    <li>Cumplimiento con estándares de la industria</li>
+                </ul>
+            </div>
+            
+            <h2>5. Retención de Datos</h2>
+            
+            <p>Conservamos tu información personal durante el tiempo necesario para:</p>
+            <ul>
+                <li>Proporcionar nuestros servicios de manera efectiva</li>
+                <li>Cumplir con obligaciones legales y regulatorias</li>
+                <li>Resolver disputas y hacer cumplir nuestros acuerdos</li>
+                <li>Mejorar nuestros servicios y desarrollar nuevas funcionalidades</li>
+            </ul>
+            
+            <p>Los mensajes procesados se conservan por un máximo de 12 meses, salvo que solicites su eliminación antes.</p>
+            
+            <h2>6. Tus Derechos</h2>
+            
+            <div class="section">
+                <p>Tienes los siguientes derechos respecto a tu información personal:</p>
+                <ul>
+                    <li><strong>Acceso:</strong> Solicitar una copia de la información que tenemos sobre ti</li>
+                    <li><strong>Rectificación:</strong> Corregir información inexacta o incompleta</li>
+                    <li><strong>Eliminación:</strong> Solicitar la eliminación de tu información personal</li>
+                    <li><strong>Portabilidad:</strong> Recibir tus datos en un formato estructurado</li>
+                    <li><strong>Restricción:</strong> Limitar el procesamiento de tu información</li>
+                    <li><strong>Objeción:</strong> Oponerte al procesamiento de tus datos</li>
+                    <li><strong>Revocación:</strong> Retirar tu consentimiento en cualquier momento</li>
+                </ul>
+            </div>
+            
+            <h2>7. Cookies y Tecnologías Similares</h2>
+            
+            <p>Utilizamos cookies y tecnologías similares para:</p>
+            <ul>
+                <li>Mantener tu sesión activa y segura</li>
+                <li>Recordar tus preferencias y configuraciones</li>
+                <li>Analizar el uso de la aplicación</li>
+                <li>Mejorar la experiencia del usuario</li>
+            </ul>
+            
+            <p>Puedes controlar las cookies a través de la configuración de tu navegador.</p>
+            
+            <h2>8. Transferencias Internacionales</h2>
+            
+            <p>Tu información puede ser procesada en servidores ubicados fuera de tu país de residencia. Nos aseguramos de que cualquier transferencia internacional cumpla con las leyes aplicables de protección de datos y mantenga un nivel adecuado de protección.</p>
+            
+            <h2>9. Menores de Edad</h2>
+            
+            <p>Nuestra aplicación no está dirigida a menores de 13 años. No recopilamos conscientemente información personal de niños menores de 13 años. Si descubrimos que hemos recopilado información de un menor, la eliminaremos inmediatamente.</p>
+            
+            <h2>10. Cambios a esta Política</h2>
+            
+            <p>Podemos actualizar esta Política de Privacidad periódicamente. Te notificaremos sobre cambios significativos mediante:</p>
+            <ul>
+                <li>Aviso prominente en la aplicación</li>
+                <li>Notificación por email</li>
+                <li>Actualización de la fecha de "Última actualización"</li>
+            </ul>
+            
+            <p>El uso continuado de la aplicación después de los cambios constituye tu aceptación de la política actualizada.</p>
+            
+            <div class="contact-info">
+                <h3>11. Contacto</h3>
+                <p>Si tienes preguntas, inquietudes o deseas ejercer tus derechos respecto a esta Política de Privacidad, puedes contactarnos:</p>
+                <p><strong>Empresa:</strong> Heriberto C.</p>
+                <p><strong>Ubicación:</strong> Zamora, Michoacán, México</p>
+                <p><strong>Email:</strong> privacidad@heribertoc.com</p>
+                <p><strong>Teléfono:</strong> +52 (351) XXX-XXXX</p>
+                
+                <p style="margin-top: 1.5rem;"><strong>Respuesta:</strong> Nos comprometemos a responder a tu solicitud dentro de 30 días calendario.</p>
+            </div>
+            
+            <div class="highlight">
+                <p><strong>Compromiso:</strong> En Heriberto C. estamos comprometidos con la transparencia y la protección de tu privacidad. Esta política refleja nuestro compromiso con el manejo responsable de tu información personal.</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Heriberto C. Todos los derechos reservados.</p>
+            <p>Aplicación de Respuesta Automática para Páginas de Facebook</p>
+            <div class="footer-links">
+                <p>Esta aplicación cumple con las políticas de Facebook y las regulaciones de protección de datos aplicables.</p>
+                <p>Desarrollado con responsabilidad y compromiso con la privacidad del usuario.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
